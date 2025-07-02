@@ -18,7 +18,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  defaultStorageClass: ""
+  defaultStorageClass: "csi-s3"
   storageClass: ""
   ## Security parameters
   ##
@@ -112,14 +112,14 @@ image:
 
 ## @param wildflyUsername WildFly username
 ##
-wildflyUsername: user
+wildflyUsername: manager
 ## @param wildflyPassword WildFly user password
 ## Defaults to a random 10-character alphanumeric string if not set
 ##
-wildflyPassword: ""
+wildflyPassword: "start123"
 ## @param exposeManagementConsole Allows exposing the WildFly Management console outside the cluster
 ##
-exposeManagementConsole: false
+exposeManagementConsole: true
 ## @param command [array] Override default container command (useful when using custom images)
 ##
 command: []
