@@ -146,7 +146,7 @@ extraEnvVarsSecret: ""
 
 ## @param replicaCount Number of Wildfly replicas to deploy
 ##
-replicaCount: 1
+replicaCount: 2
 ## @param updateStrategy.type WildFly deployment strategy type
 ## ref: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy
 ## NOTE: Set it to `Recreate` if you use a PV that cannot be mounted on multiple pods
@@ -811,4 +811,3 @@ volumePermissions:
     seLinuxOptions: {}
     runAsUser: 0
 
-Replicas: 2
