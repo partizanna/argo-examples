@@ -810,3 +810,5 @@ volumePermissions:
   securityContext:
     seLinuxOptions: {}
     runAsUser: 0
+
+Replicas: 2
