@@ -740,7 +740,7 @@ persistence:
   storageClass: "csi-s3"
   ## @param persistence.existingClaim Use a existing PVC which must be created manually before bound
   ##
-  existingClaim: "default/minio-pvc"
+  existingClaim: "minio-pvc"
   ## @param persistence.accessModes [array] Persistent Volume access modes
   ##
   accessModes:
