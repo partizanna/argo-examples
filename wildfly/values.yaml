@@ -19,7 +19,7 @@ global:
   ##
   imagePullSecrets: []
   defaultStorageClass: "csi-s3"
-  storageClass: ""
+  storageClass: "csi-s3"
   ## Security parameters
   ##
   security:
@@ -737,17 +737,17 @@ persistence:
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
   ## If undefined (the default) or set to null, no storageClassName spec is set, choosing the default provisioner
   ##
-  storageClass: ""
+  storageClass: "csi-s3"
   ## @param persistence.existingClaim Use a existing PVC which must be created manually before bound
   ##
-  existingClaim: ""
+  existingClaim: "default/minio-pvc"
   ## @param persistence.accessModes [array] Persistent Volume access modes
   ##
   accessModes:
     - ReadWriteOnce
   ## @param persistence.size Persistent Volume size
   ##
-  size: 8Gi
+  size: 1Gi
   ## @param persistence.annotations Persistent Volume Claim annotations
   ##
   annotations: {}
